@@ -36,7 +36,3 @@ The work combines **SolidWorks modeling**, **CoppeliaSim simulation**, and **MAT
 - Verified motion behavior in CoppeliaSim.  
 - Implemented a MATLAB solver for joint angles.  
 - Visualized manipulator from **top** and **front views**.  
-
----
-
-## 📂 Repository Structure
