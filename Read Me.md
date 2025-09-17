@@ -1,12 +1,12 @@
 # Rotopod R-3000 – 6-DOF Parallel Manipulator
 
-## Project Overview
+## 📌Project Overview
 This project presents the **design, simulation, and analysis** of a **Rotopod R-3000** (Stewart Platform).  
 The work combines **SolidWorks modeling**, **CoppeliaSim simulation**, and **MATLAB kinematic analysis** to study its motion and optimize the design.
 
 ---
 
-## Objectives
+## 🎯Objectives
 - Design and model the Rotopod mechanism inspired by the Stewart Platform.  
 - Simulate kinematics in **CoppeliaSim**.  
 - Derive and implement **inverse kinematics equations** in **MATLAB**.  
@@ -15,7 +15,7 @@ The work combines **SolidWorks modeling**, **CoppeliaSim simulation**, and **MAT
 
 ---
 
-## Tools & Software
+## 🛠Tools & Software
 - **SolidWorks** – CAD design of Rotopod R-3000.  
 - **CoppeliaSim Pro** – Motion simulation and data extraction.  
 - **MATLAB** – Kinematic equations, symbolic solving, and visualization.  
@@ -23,7 +23,7 @@ The work combines **SolidWorks modeling**, **CoppeliaSim simulation**, and **MAT
 
 ---
 
-## Methodology
+## 📐Methodology
 1. **CAD Modeling** in SolidWorks.  
 2. **Simulation** of motion and joints in CoppeliaSim.  
 3. **Kinematic Analysis** using inverse kinematics equations.  
@@ -31,7 +31,7 @@ The work combines **SolidWorks modeling**, **CoppeliaSim simulation**, and **MAT
 
 ---
 
-## Results
+## 📊Results
 - Successfully modeled the **Rotopod R-3000** in SolidWorks.  
 - Verified motion behavior in CoppeliaSim.  
 - Implemented a MATLAB solver for joint angles.  
@@ -97,8 +97,8 @@ sgtitle('6-DOF Parallel Manipulator');
 ---
 ## 👨‍🎓 Authors
 
-Mohammad Mahdi Khademi 
-Negar Naghavian
+- **Mohammad Mahdi Khademi**
+- **Negar Naghavian**
 
 Supervised by: Dr. Seyed Hassan Zabihi
 
