@@ -36,3 +36,81 @@ The work combines **SolidWorks modeling**, **CoppeliaSim simulation**, and **MAT
 - Verified motion behavior in CoppeliaSim.  
 - Implemented a MATLAB solver for joint angles.  
 - Visualized manipulator from **top** and **front views**.  
+
+## 📂 Repository Structure
+├── solidworks_model/ # CAD files
+
+├── simulation/ # CoppeliaSim project files
+
+├── matlab/
+
+│ ├── inverse_kinematics.m # Kinematic solver
+
+│ ├── plot_robot.m # Visualization function
+
+│ └── main.m # Main MATLAB script
+
+└── README.md # This file
+
+
+---
+
+## 📖 MATLAB Code Example
+Below is the **MATLAB script** used for inverse kinematics and visualization:
+
+```matlab
+clc;
+clear;
+close all;
+
+%-------------------------------------------------------------------------%
+
+Pp = [30, 0, 140];  
+Rp = eye(3); 
+
+q = inverse_kinematics(Pp, Rp);
+disp('Joint angles (in radians):');
+disp(q);
+disp('Joint angles (in degrees):');
+disp(q * 180 / pi);
+
+figure;
+set(gcf, 'Position', [100, 100, 1200, 500]); 
+
+subplot(1, 2, 1);
+plot_robot(Pp, Rp, q, 'top');
+
+subplot(1, 2, 2);
+plot_robot(Pp, Rp, q, 'front');
+
+sgtitle('6-DOF Parallel Manipulator');
+```
+---
+## 📸 Simulation Results
+
+### Top View
+![Top View](Pictures/MATLAB/1_1.jpg)
+
+### Front View
+![Front View](Pictures/MATLAB/1_2.jpg)
+
+---
+## 👨‍🎓 Authors
+
+Mohammad Mahdi Khademi 
+Negar Naghavian
+
+Supervised by: Dr. Seyed Hassan Zabihi
+
+---
+## 🔬 Applications
+
+Vibration isolation platforms
+
+Robotics and automation
+
+Flight simulators and motion control
+
+Medical robotics (rehabilitation, surgery assistance)
+
+---
